@@ -1,0 +1,19 @@
+{
+  "name": "react-happy-path",
+  "version": "1.0.0",
+  "description": "react app with server API happy path",
+  "repository": "https://github.com/kindohm/react-happy-path",
+  "dependencies": {
+    "express": "4.16.2",
+    "express-ws": "3.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
+  },
+  "license": "MIT"
+}
